@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#CCFFFFFF"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/state_name"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:textColor="#121212"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/state_total_no"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FF7043"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/state_dead_no"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#121212"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/state_recov_no"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#2ab7ca"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
